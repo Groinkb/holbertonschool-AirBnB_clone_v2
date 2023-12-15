@@ -5,14 +5,13 @@
 	<TITLE>HBNB</TITLE>
 </HEAD>
 
-<body>
-	<h1>States</h1>
-	<ul>
-		{% for state in states|sort(attribute="name") %}
-		<li>{{ state.id }}: <b>{{ state.name }}</b></li>
+<BODY>
+	<H1>States</H1>
+	<UL>
+		{% for state in states | sort(attribute='name') %}
+		<LI>{{ state['id'] }}: <B>{{ state['name'] }}</B></LI>
 		{% endfor %}
-	</ul>
+	</UL>
+</BODY>
 
-</body>
-
-</html>
+</HTML>
